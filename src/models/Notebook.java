@@ -20,13 +20,6 @@ public class Notebook extends Equipamento {
         this.sistemaOperacional = sistemaOperacional;
     }
 
-    public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB){
-        this.processador = processador;
-        this.memoria = memoria;
-        this.tecladoRetroiluminado = tecladoRetroiluminado;
-        this.qntDePortasUSB = qntDePortasUSB;
-    }
-
     public String getProcessador(){
         return this.processador;
     }

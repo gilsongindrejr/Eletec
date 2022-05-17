@@ -20,13 +20,6 @@ public class Smartphone extends Equipamento {
         this.armazenamento = armazenamento;
     }
 
-    public Smartphone(int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital) {
-        this.qntSimCard = qntSimCard;
-        this.qntCamera = qntCamera;
-        this.NFC = NFC;
-        this.impressaoDigital = impressaoDigital;
-    }
-
     public int getQntSimCard(){
         return this.qntSimCard;
     }

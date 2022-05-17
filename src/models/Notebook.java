@@ -1,15 +1,18 @@
 package models;
 
-public class Notebook {
+public class Notebook extends Equipamento {
     private String processador;
     private String memoria;
     private boolean tecladoRetroiluminado;
     private int qntDePortasUSB;
     private String sistemaOperacional;
 
-    public Notebook(){}
+    public Notebook(){
+        super();
+    }
 
-    public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB, String sistemaOperacional){
+    public Notebook(String marca, String modelo, String tamanhoDaTela, String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB, String sistemaOperacional){
+        super(marca, modelo, tamanhoDaTela);
         this.processador = processador;
         this.memoria = memoria;
         this.tecladoRetroiluminado = tecladoRetroiluminado;

@@ -59,5 +59,9 @@ public class Notebook extends Equipamento {
     public void setSistemaOperacional(String sistemaOperaciocal){
         this.sistemaOperacional = sistemaOperacional;
     }
+
+    public String toString(){
+        return "Notebook: " + super.getMarca() + " " + super.getModelo();
+    }
 }
 

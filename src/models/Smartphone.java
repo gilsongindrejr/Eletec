@@ -59,4 +59,8 @@ public class Smartphone extends Equipamento {
     public void setArmazenamento(int armazenamento){
         this.armazenamento = armazenamento;
     }
+
+    public String toString(){
+        return "Smartphone: " + super.getMarca() + " " + super.getModelo();
+    }
 }

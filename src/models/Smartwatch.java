@@ -59,4 +59,8 @@ public class Smartwatch extends Equipamento {
     public void setArmazenamento(int armazenamento) {
         this.armazenamento = armazenamento;
     }
+
+    public String toString(){
+        return "Smartwatch: " + super.getMarca() + " " + super.getModelo();
+    }
 }

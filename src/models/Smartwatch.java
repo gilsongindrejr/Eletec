@@ -1,15 +1,18 @@
 package models;
 
-public class Smartwatch {
+public class Smartwatch extends Equipamento {
     private String tipoDePulseira;
     private boolean resistenteAgua;
     private boolean slotSdCard;
     private float peso;
     private int armazenamento;
 
-    public Smartwatch(){}
+    public Smartwatch(){
+        super();
+    }
 
-    public Smartwatch(String tipoDePulseira, boolean resistenteAgua, boolean slotSdCard, float peso, int armazenamento){
+    public Smartwatch(String marca, String modelo, String tamanhoDaTela, String tipoDePulseira, boolean resistenteAgua, boolean slotSdCard, float peso, int armazenamento){
+        super(marca, modelo, tamanhoDaTela);
         this.tipoDePulseira = tipoDePulseira;
         this.resistenteAgua = resistenteAgua;
         this.slotSdCard = slotSdCard;

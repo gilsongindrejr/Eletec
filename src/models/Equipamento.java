@@ -36,4 +36,8 @@ public class Equipamento {
     public void setTamanhoDaTela(String tamanhoDaTela){
         this.tamanhoDaTela = tamanhoDaTela;
     }
+
+    public String toString(){
+        return "Equipamento generico: " + marca + " " + modelo;
+    }
 }

@@ -26,16 +26,32 @@ public class Smartphone {
         return this.qntSimCard;
     }
 
+    public void setQntSimCard(int qntSimCard){
+        this.qntSimCard = qntSimCard;
+    }
+
     public int getQntCamera(){
         return this.qntCamera;
+    }
+
+    public void setQntCamera(int qntCamera){
+        this.qntCamera = qntCamera;
     }
 
     public boolean getNFC(){
         return this.NFC;
     }
 
+    public void setNFC(boolean NFC){
+        this.NFC = NFC;
+    }
+
     public boolean getImpressaoDigital(){
         return this.impressaoDigital;
+    }
+
+    public void setImpressaoDigital(boolean impressaoDigital){
+        this.impressaoDigital  = impressaoDigital;
     }
 
     public int getArmazenamento(){

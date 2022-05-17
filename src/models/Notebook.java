@@ -4,28 +4,28 @@ public class Notebook {
     private String processador;
     private String memoria;
     private boolean tecladoRetroiluminado;
-    private int quantidadeDePortasUSB;
+    private int qntDePortasUSB;
     private String sistemaOperacional;
 
-    public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int quantidadeDePortasUSB, String sistemaOperacional){
+    public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB, String sistemaOperacional){
         this.processador = processador;
         this.memoria = memoria;
         this.tecladoRetroiluminado = tecladoRetroiluminado;
-        this.quantidadeDePortasUSB = quantidadeDePortasUSB;
+        this.qntDePortasUSB = qntDePortasUSB;
         this.sistemaOperacional = sistemaOperacional;
     }
 
-    public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int quantidadeDePortasUSB){
+    public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB){
         this.processador = processador;
         this.memoria = memoria;
         this.tecladoRetroiluminado = tecladoRetroiluminado;
-        this.quantidadeDePortasUSB = quantidadeDePortasUSB;
+        this.qntDePortasUSB = qntDePortasUSB;
     }
 
-    public Notebook(String processador, boolean tecladoRetroiluminado, int quantidadeDePortasUSB){
+    public Notebook(String processador, boolean tecladoRetroiluminado, int qntDePortasUSB){
         this.processador = processador;
         this.tecladoRetroiluminado = tecladoRetroiluminado;
-        this.quantidadeDePortasUSB = quantidadeDePortasUSB;
+        this.qntDePortasUSB = qntDePortasUSB;
     }
 
     public String getProcessador(){
@@ -48,8 +48,16 @@ public class Notebook {
         return this.tecladoRetroiluminado;
     }
 
-    public int getQuantidadeDePortasUSB(){
-        return this.quantidadeDePortasUSB;
+    public void setTecladoRetroiluminado(boolean tecladoRetroiluminado){
+        this.tecladoRetroiluminado = tecladoRetroiluminado;
+    }
+
+    public int getQntDePortasUSB(){
+        return this.qntDePortasUSB;
+    }
+
+    public void setQntDePortasUSB(int qntDePortasUSB){
+        this.qntDePortasUSB = qntDePortasUSB;
     }
 
     public String getSistemaOperacional(){

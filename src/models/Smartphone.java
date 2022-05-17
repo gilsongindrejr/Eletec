@@ -1,15 +1,18 @@
 package models;
 
-public class Smartphone {
+public class Smartphone extends Equipamento {
     private int qntSimCard;
     private int qntCamera;
     private boolean NFC;
     private boolean impressaoDigital;
     private int armazenamento;
 
-    public Smartphone(){}
+    public Smartphone(){
+        super();
+    }
 
-    public Smartphone(int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, int armazenamento){
+    public Smartphone(String marca, String modelo, String tamanhoDaTela, int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, int armazenamento){
+        super(marca, modelo, tamanhoDaTela);
         this.qntSimCard = qntSimCard;
         this.qntCamera = qntCamera;
         this.NFC = NFC;

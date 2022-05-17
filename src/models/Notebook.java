@@ -3,11 +3,11 @@ package models;
 public class Notebook {
     private String processador;
     private String memoria;
-    private final Boolean tecladoRetroiluminado;
+    private final boolean tecladoRetroiluminado;
     private final int quantidadeDePortasUSB;
     private String sistemaOperacional;
 
-    public Notebook(String processador, String memoria, Boolean tecladoRetroiluminado, int quantidadeDePortasUSB, String sistemaOperacional){
+    public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int quantidadeDePortasUSB, String sistemaOperacional){
         this.processador = processador;
         this.memoria = memoria;
         this.tecladoRetroiluminado = tecladoRetroiluminado;
@@ -15,14 +15,14 @@ public class Notebook {
         this.sistemaOperacional = sistemaOperacional;
     }
 
-    public Notebook(String processador, String memoria, Boolean tecladoRetroiluminado, int quantidadeDePortasUSB){
+    public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int quantidadeDePortasUSB){
         this.processador = processador;
         this.memoria = memoria;
         this.tecladoRetroiluminado = tecladoRetroiluminado;
         this.quantidadeDePortasUSB = quantidadeDePortasUSB;
     }
 
-    public Notebook(String processador, Boolean tecladoRetroiluminado, int quantidadeDePortasUSB){
+    public Notebook(String processador, boolean tecladoRetroiluminado, int quantidadeDePortasUSB){
         this.processador = processador;
         this.tecladoRetroiluminado = tecladoRetroiluminado;
         this.quantidadeDePortasUSB = quantidadeDePortasUSB;

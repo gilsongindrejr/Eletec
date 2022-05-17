@@ -1,7 +1,6 @@
 package models;
 
 public class Equipamento {
-
     private final String marca;
     private final String modelo;
     private final String tamanhoDaTela;

@@ -7,6 +7,8 @@ public class Smartphone {
     private boolean impressaoDigital;
     private int armazenamento;
 
+    public Smartphone(){}
+
     public Smartphone(int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, int armazenamento){
         this.qntSimCard = qntSimCard;
         this.qntCamera = qntCamera;

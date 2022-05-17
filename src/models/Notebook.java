@@ -7,6 +7,8 @@ public class Notebook {
     private int qntDePortasUSB;
     private String sistemaOperacional;
 
+    public Notebook(){}
+
     public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB, String sistemaOperacional){
         this.processador = processador;
         this.memoria = memoria;
@@ -18,12 +20,6 @@ public class Notebook {
     public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB){
         this.processador = processador;
         this.memoria = memoria;
-        this.tecladoRetroiluminado = tecladoRetroiluminado;
-        this.qntDePortasUSB = qntDePortasUSB;
-    }
-
-    public Notebook(String processador, boolean tecladoRetroiluminado, int qntDePortasUSB){
-        this.processador = processador;
         this.tecladoRetroiluminado = tecladoRetroiluminado;
         this.qntDePortasUSB = qntDePortasUSB;
     }

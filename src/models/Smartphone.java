@@ -7,12 +7,12 @@ public class Smartphone extends Equipamento {
     private boolean impressaoDigital;
     private int armazenamento;
 
-    public Smartphone(String marca, String modelo, String tamanhoDaTela){
-        super(marca, modelo, tamanhoDaTela);
+    public Smartphone(String marca, String modelo, String tamanhoDaTela, float preco){
+        super(marca, modelo, tamanhoDaTela, preco);
     }
 
-    public Smartphone(String marca, String modelo, String tamanhoDaTela, int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, int armazenamento){
-        super(marca, modelo, tamanhoDaTela);
+    public Smartphone(String marca, String modelo, String tamanhoDaTela, float preco, int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, int armazenamento){
+        super(marca, modelo, tamanhoDaTela, preco);
         this.qntSimCard = qntSimCard;
         this.qntCamera = qntCamera;
         this.NFC = NFC;

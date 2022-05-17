@@ -4,11 +4,13 @@ public class Equipamento {
     private String marca;
     private String modelo;
     private String tamanhoDaTela;
+    private float preco;
 
-    public Equipamento(String marca, String modelo, String tamanhoDaTela) {
+    public Equipamento(String marca, String modelo, String tamanhoDaTela, float preco) {
         this.marca = marca;
         this.modelo = modelo;
         this.tamanhoDaTela = tamanhoDaTela;
+        this.preco = preco;
     }
 
     public String getMarca(){
@@ -33,6 +35,14 @@ public class Equipamento {
 
     public void setTamanhoDaTela(String tamanhoDaTela){
         this.tamanhoDaTela = tamanhoDaTela;
+    }
+
+    public float getPreco(){
+        return this.preco;
+    }
+
+    public void setPreco(float preco){
+        this.preco = preco;
     }
 
     public String toString(){

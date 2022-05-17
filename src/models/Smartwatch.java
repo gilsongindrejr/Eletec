@@ -7,12 +7,12 @@ public class Smartwatch extends Equipamento {
     private float peso;
     private int armazenamento;
 
-    public Smartwatch(String marca, String modelo, String tamanhoDaTela){
-        super(marca, modelo, tamanhoDaTela);
+    public Smartwatch(String marca, String modelo, String tamanhoDaTela, float preco){
+        super(marca, modelo, tamanhoDaTela, preco);
     }
 
-    public Smartwatch(String marca, String modelo, String tamanhoDaTela, String tipoDePulseira, boolean resistenteAgua, boolean slotSdCard, float peso, int armazenamento){
-        super(marca, modelo, tamanhoDaTela);
+    public Smartwatch(String marca, String modelo, String tamanhoDaTela, float preco, String tipoDePulseira, boolean resistenteAgua, boolean slotSdCard, float peso, int armazenamento){
+        super(marca, modelo, tamanhoDaTela, preco);
         this.tipoDePulseira = tipoDePulseira;
         this.resistenteAgua = resistenteAgua;
         this.slotSdCard = slotSdCard;

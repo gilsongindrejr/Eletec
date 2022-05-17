@@ -7,12 +7,12 @@ public class Notebook extends Equipamento {
     private int qntDePortasUSB;
     private String sistemaOperacional;
 
-    public Notebook(String marca, String modelo, String tamanhoDaTela){
-        super(marca, modelo, tamanhoDaTela);
+    public Notebook(String marca, String modelo, String tamanhoDaTela, float preco){
+        super(marca, modelo, tamanhoDaTela, preco);
     }
 
-    public Notebook(String marca, String modelo, String tamanhoDaTela, String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB, String sistemaOperacional){
-        super(marca, modelo, tamanhoDaTela);
+    public Notebook(String marca, String modelo, String tamanhoDaTela, float preco, String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB, String sistemaOperacional){
+        super(marca, modelo, tamanhoDaTela, preco);
         this.processador = processador;
         this.memoria = memoria;
         this.tecladoRetroiluminado = tecladoRetroiluminado;

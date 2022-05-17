@@ -3,8 +3,8 @@ package models;
 public class Notebook {
     private String processador;
     private String memoria;
-    private final boolean tecladoRetroiluminado;
-    private final int quantidadeDePortasUSB;
+    private boolean tecladoRetroiluminado;
+    private int quantidadeDePortasUSB;
     private String sistemaOperacional;
 
     public Notebook(String processador, String memoria, boolean tecladoRetroiluminado, int quantidadeDePortasUSB, String sistemaOperacional){

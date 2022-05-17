@@ -1,9 +1,9 @@
 package models;
 
 public class Equipamento {
-    private final String marca;
-    private final String modelo;
-    private final String tamanhoDaTela;
+    private String marca;
+    private String modelo;
+    private String tamanhoDaTela;
 
     public Equipamento(String marca, String modelo, String tamanhoDaTela){
         this.marca = marca;

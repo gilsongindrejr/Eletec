@@ -5,8 +5,6 @@ public class Equipamento {
     private String modelo;
     private String tamanhoDaTela;
 
-    public Equipamento(){}
-
     public Equipamento(String marca, String modelo, String tamanhoDaTela) {
         this.marca = marca;
         this.modelo = modelo;

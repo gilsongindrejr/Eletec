@@ -7,8 +7,8 @@ public class Smartwatch extends Equipamento {
     private float peso;
     private int armazenamento;
 
-    public Smartwatch(){
-        super();
+    public Smartwatch(String marca, String modelo, String tamanhoDaTela){
+        super(marca, modelo, tamanhoDaTela);
     }
 
     public Smartwatch(String marca, String modelo, String tamanhoDaTela, String tipoDePulseira, boolean resistenteAgua, boolean slotSdCard, float peso, int armazenamento){

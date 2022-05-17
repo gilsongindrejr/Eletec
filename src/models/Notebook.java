@@ -7,8 +7,8 @@ public class Notebook extends Equipamento {
     private int qntDePortasUSB;
     private String sistemaOperacional;
 
-    public Notebook(){
-        super();
+    public Notebook(String marca, String modelo, String tamanhoDaTela){
+        super(marca, modelo, tamanhoDaTela);
     }
 
     public Notebook(String marca, String modelo, String tamanhoDaTela, String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB, String sistemaOperacional){

@@ -7,8 +7,8 @@ public class Smartphone extends Equipamento {
     private boolean impressaoDigital;
     private int armazenamento;
 
-    public Smartphone(){
-        super();
+    public Smartphone(String marca, String modelo, String tamanhoDaTela){
+        super(marca, modelo, tamanhoDaTela);
     }
 
     public Smartphone(String marca, String modelo, String tamanhoDaTela, int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, int armazenamento){

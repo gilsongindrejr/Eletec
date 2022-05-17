@@ -5,13 +5,13 @@ public class Smartphone extends Equipamento {
     private int qntCamera;
     private boolean NFC;
     private boolean impressaoDigital;
-    private int armazenamento;
+    private String armazenamento;
 
     public Smartphone(String marca, String modelo, String tamanhoDaTela, float preco){
         super(marca, modelo, tamanhoDaTela, preco);
     }
 
-    public Smartphone(String marca, String modelo, String tamanhoDaTela, float preco, int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, int armazenamento){
+    public Smartphone(String marca, String modelo, String tamanhoDaTela, float preco, int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, String armazenamento){
         super(marca, modelo, tamanhoDaTela, preco);
         this.qntSimCard = qntSimCard;
         this.qntCamera = qntCamera;
@@ -52,11 +52,11 @@ public class Smartphone extends Equipamento {
         this.impressaoDigital  = impressaoDigital;
     }
 
-    public int getArmazenamento(){
+    public String getArmazenamento(){
         return this.armazenamento;
     }
 
-    public void setArmazenamento(int armazenamento){
+    public void setArmazenamento(String armazenamento){
         this.armazenamento = armazenamento;
     }
 

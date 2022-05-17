@@ -5,13 +5,13 @@ public class Smartwatch extends Equipamento {
     private boolean resistenteAgua;
     private boolean slotSdCard;
     private float peso;
-    private int armazenamento;
+    private String armazenamento;
 
     public Smartwatch(String marca, String modelo, String tamanhoDaTela, float preco){
         super(marca, modelo, tamanhoDaTela, preco);
     }
 
-    public Smartwatch(String marca, String modelo, String tamanhoDaTela, float preco, String tipoDePulseira, boolean resistenteAgua, boolean slotSdCard, float peso, int armazenamento){
+    public Smartwatch(String marca, String modelo, String tamanhoDaTela, float preco, String tipoDePulseira, boolean resistenteAgua, boolean slotSdCard, float peso, String armazenamento){
         super(marca, modelo, tamanhoDaTela, preco);
         this.tipoDePulseira = tipoDePulseira;
         this.resistenteAgua = resistenteAgua;
@@ -52,11 +52,11 @@ public class Smartwatch extends Equipamento {
         this.peso = peso;
     }
 
-    public int getArmazenamento(){
+    public String getArmazenamento(){
         return this.armazenamento;
     }
 
-    public void setArmazenamento(int armazenamento) {
+    public void setArmazenamento(String armazenamento) {
         this.armazenamento = armazenamento;
     }
 

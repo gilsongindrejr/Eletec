@@ -1,6 +1,8 @@
 package models;
 
-public class Equipamento {
+import java.io.Serializable;
+
+public class Equipamento implements Serializable {
     private String marca;
     private String modelo;
     private String tamanhoDaTela;

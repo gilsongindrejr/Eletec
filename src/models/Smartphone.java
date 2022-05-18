@@ -1,6 +1,8 @@
 package models;
 
-public class Smartphone extends Equipamento {
+import java.io.Serializable;
+
+public class Smartphone extends Equipamento implements Serializable {
     private int qntSimCard;
     private int qntCamera;
     private boolean NFC;

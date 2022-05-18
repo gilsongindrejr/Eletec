@@ -1,6 +1,8 @@
 package models;
 
-public class Notebook extends Equipamento {
+import java.io.Serializable;
+
+public class Notebook extends Equipamento implements Serializable {
     private String processador;
     private String memoria;
     private boolean tecladoRetroiluminado;

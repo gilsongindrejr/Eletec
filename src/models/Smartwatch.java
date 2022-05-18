@@ -1,6 +1,8 @@
 package models;
 
-public class Smartwatch extends Equipamento {
+import java.io.Serializable;
+
+public class Smartwatch extends Equipamento implements Serializable {
     private String tipoDePulseira;
     private boolean resistenteAgua;
     private boolean slotSdCard;

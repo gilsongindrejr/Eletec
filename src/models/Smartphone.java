@@ -60,6 +60,7 @@ public class Smartphone extends Equipamento {
         this.armazenamento = armazenamento;
     }
 
+    @Override
     public String toString(){
         return "Smartphone: " + super.getMarca() + " " + super.getModelo();
     }

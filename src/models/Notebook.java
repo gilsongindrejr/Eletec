@@ -60,6 +60,7 @@ public class Notebook extends Equipamento {
         this.sistemaOperacional = sistemaOperacional;
     }
 
+    @Override
     public String toString(){
         return "Notebook: " + super.getMarca() + " " + super.getModelo();
     }

@@ -60,6 +60,7 @@ public class Smartwatch extends Equipamento {
         this.armazenamento = armazenamento;
     }
 
+    @Override
     public String toString(){
         return "Smartwatch: " + super.getMarca() + " " + super.getModelo();
     }

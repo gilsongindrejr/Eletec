@@ -6,14 +6,14 @@ public class Notebook extends Equipamento implements Serializable {
     private String processador;
     private String memoria;
     private boolean tecladoRetroiluminado;
-    private int qntDePortasUSB;
+    private String qntDePortasUSB;
     private String sistemaOperacional;
 
     public Notebook(String marca, String modelo, String tamanhoDaTela, float preco){
         super(marca, modelo, tamanhoDaTela, preco);
     }
 
-    public Notebook(String marca, String modelo, String tamanhoDaTela, float preco, String processador, String memoria, boolean tecladoRetroiluminado, int qntDePortasUSB, String sistemaOperacional){
+    public Notebook(String marca, String modelo, String tamanhoDaTela, float preco, String processador, String memoria, boolean tecladoRetroiluminado, String qntDePortasUSB, String sistemaOperacional){
         super(marca, modelo, tamanhoDaTela, preco);
         this.processador = processador;
         this.memoria = memoria;
@@ -46,11 +46,11 @@ public class Notebook extends Equipamento implements Serializable {
         this.tecladoRetroiluminado = tecladoRetroiluminado;
     }
 
-    public int getQntDePortasUSB(){
+    public String getQntDePortasUSB(){
         return this.qntDePortasUSB;
     }
 
-    public void setQntDePortasUSB(int qntDePortasUSB){
+    public void setQntDePortasUSB(String qntDePortasUSB){
         this.qntDePortasUSB = qntDePortasUSB;
     }
 

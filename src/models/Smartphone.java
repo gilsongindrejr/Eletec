@@ -3,7 +3,7 @@ package models;
 import java.io.Serializable;
 
 public class Smartphone extends Equipamento implements Serializable {
-    private int qntSimCard;
+    private String qntSimCard;
     private int qntCamera;
     private boolean NFC;
     private boolean impressaoDigital;
@@ -13,7 +13,7 @@ public class Smartphone extends Equipamento implements Serializable {
         super(marca, modelo, tamanhoDaTela, preco);
     }
 
-    public Smartphone(String marca, String modelo, String tamanhoDaTela, float preco, int qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, String armazenamento){
+    public Smartphone(String marca, String modelo, String tamanhoDaTela, float preco, String qntSimCard, int qntCamera, boolean NFC, boolean impressaoDigital, String armazenamento){
         super(marca, modelo, tamanhoDaTela, preco);
         this.qntSimCard = qntSimCard;
         this.qntCamera = qntCamera;
@@ -22,11 +22,11 @@ public class Smartphone extends Equipamento implements Serializable {
         this.armazenamento = armazenamento;
     }
 
-    public int getQntSimCard(){
+    public String getQntSimCard(){
         return this.qntSimCard;
     }
 
-    public void setQntSimCard(int qntSimCard){
+    public void setQntSimCard(String qntSimCard){
         this.qntSimCard = qntSimCard;
     }
 
